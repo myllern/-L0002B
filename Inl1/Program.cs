@@ -8,7 +8,9 @@ namespace OU1
         {
             while (true)
             {
+                // skapar ett obj
                 Cashier c = new Cashier();
+                // kör obj
                 c.init();
             }
         }
@@ -19,12 +21,14 @@ namespace OU1
 
         public class Cashier
         {
+            // skapar var
             int sum;
             int deposit;
             int price;
             public void init()
             {
 
+                // läser in värden 
                 Console.WriteLine("Ange pris :");
                 this.price = int.Parse(Console.ReadLine());
 
@@ -34,8 +38,10 @@ namespace OU1
                 sum = deposit - price;
 
 
+                // om sum > 0, skriv ut den som metoden gör, alltså printar hur mång av valören som ska tillbaka
                 if (sum > 0)
                 {
+                
                     Console.WriteLine($"Växel tillbaka: {sum} kr"
                     );
 
@@ -49,6 +55,7 @@ namespace OU1
 
 
                 }
+                // ganska självbeskrivande
                 if (sum == 0)
                 {
                     Console.WriteLine("Allt betalt");
@@ -57,6 +64,7 @@ namespace OU1
                 }
                 else
                 {
+                                    // ganska självbeskrivande
                     sum = deposit - price;
                     Console.WriteLine("Ej tillräcklig betalning... ");
                     Console.WriteLine("\n--------------------------------------------------------\n");
@@ -65,6 +73,8 @@ namespace OU1
                 }
 
             }
+
+            // tar in valören som skall printas.
             public String nrOfBills(int val)
             {
                 String s = $"{val} valör tillbaka: {(sum - sum % val) / val}";
