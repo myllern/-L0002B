@@ -6,51 +6,76 @@ namespace OU1
     {
         static void Main(string[] args)
         {
-            
+            while(true){
+            Cashier c = new Cashier();
+            c.init();
+            }
+        }
 
-//TODO ändra texterna 
+
+
+
+
+        public class Cashier
+        {
+            int sum;
+            int deposit;
+            int price;
+            public void init()
+            {
+
                 Console.WriteLine("Ange pris :");
-                int price = int.Parse(Console.ReadLine());
+                this.price = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("ange hur mycket du har betalat :");
                 int deposit = int.Parse(Console.ReadLine());
-                
-                int sum = deposit - price;
 
-                sum = price - deposit;
+                sum = deposit - price;
+
+
                 if (sum > 0)
                 {
-                    Console.WriteLine($"Växel tillbaka: {sum}"
+                    Console.WriteLine($"Växel tillbaka: {sum} kr"
                     );
-                    Console.WriteLine(nrOfBills(500, sum));
-                    Console.WriteLine(nrOfBills(100, sum));
-                    Console.WriteLine(nrOfBills(50, sum));
-                    Console.WriteLine(nrOfBills(20, sum));
-                    Console.WriteLine(nrOfBills(10, sum));
-                    Console.WriteLine(nrOfBills(5, sum));
-                    Console.WriteLine(nrOfBills(1, sum));
-                    
-                    Console.ReadLine();
+
+                    Console.WriteLine(nrOfBills(500));
+                    Console.WriteLine(nrOfBills(100));
+                    Console.WriteLine(nrOfBills(50));
+                    Console.WriteLine(nrOfBills(20));
+                    Console.WriteLine(nrOfBills(10));
+                    Console.WriteLine(nrOfBills(5));
+                    Console.WriteLine(nrOfBills(1));
+         
 
                 }
-
                 if (sum == 0)
                 {
                     Console.WriteLine("Allt betalt");
+                    Console.WriteLine("\n--------------------------------------------------------\n");
+                    return;
                 }
                 else
                 {
                     sum = deposit - price;
                     Console.WriteLine("Ej tillräcklig betalning... ");
+                    Console.WriteLine("\n--------------------------------------------------------\n");
+
+                    return;
                 }
-                //TODO: Fixa sum så den minskaar eller nått   
+
             }
-            public static String nrOfBills(int val, int sum)
-                {
-                    String s = $"{(sum - sum % val) / val} lappar:";
-                    sum = sum % val;
-                    return s;
-                }
+            public String nrOfBills(int val)
+            {
+                String s = $"{val} valör tillbaka: {(sum - sum % val) / val}";
+                sum = sum % val;
+                return s;
+            }
+
         }
     }
+}
+
+
+
+
 
