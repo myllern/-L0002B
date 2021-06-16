@@ -1,0 +1,16 @@
+C:\Users\Axel\Documents\c#\Inl1\bin\Debug\net5.0\Inl1.exe
+C:\Users\Axel\Documents\c#\Inl1\bin\Debug\net5.0\Inl1.deps.json
+C:\Users\Axel\Documents\c#\Inl1\bin\Debug\net5.0\Inl1.runtimeconfig.json
+C:\Users\Axel\Documents\c#\Inl1\bin\Debug\net5.0\Inl1.runtimeconfig.dev.json
+C:\Users\Axel\Documents\c#\Inl1\bin\Debug\net5.0\Inl1.dll
+C:\Users\Axel\Documents\c#\Inl1\bin\Debug\net5.0\ref\Inl1.dll
+C:\Users\Axel\Documents\c#\Inl1\bin\Debug\net5.0\Inl1.pdb
+C:\Users\Axel\Documents\c#\Inl1\obj\Debug\net5.0\Inl1.csproj.AssemblyReference.cache
+C:\Users\Axel\Documents\c#\Inl1\obj\Debug\net5.0\Inl1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Axel\Documents\c#\Inl1\obj\Debug\net5.0\Inl1.AssemblyInfoInputs.cache
+C:\Users\Axel\Documents\c#\Inl1\obj\Debug\net5.0\Inl1.AssemblyInfo.cs
+C:\Users\Axel\Documents\c#\Inl1\obj\Debug\net5.0\Inl1.csproj.CoreCompileInputs.cache
+C:\Users\Axel\Documents\c#\Inl1\obj\Debug\net5.0\Inl1.dll
+C:\Users\Axel\Documents\c#\Inl1\obj\Debug\net5.0\ref\Inl1.dll
+C:\Users\Axel\Documents\c#\Inl1\obj\Debug\net5.0\Inl1.pdb
+C:\Users\Axel\Documents\c#\Inl1\obj\Debug\net5.0\Inl1.genruntimeconfig.cache

@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Kassa/1.0.0": {
+      "Inl1/1.0.0": {
         "runtime": {
-          "Kassa.dll": {}
+          "Inl1.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Kassa/1.0.0": {
+    "Inl1/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

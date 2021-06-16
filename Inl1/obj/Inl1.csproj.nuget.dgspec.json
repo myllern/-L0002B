@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Axel\\Documents\\c#\\CsharpLTH\\OU1\\Kassa\\Kassa.csproj": {}
+    "C:\\Users\\Axel\\Documents\\c#\\Inl1\\Inl1.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Axel\\Documents\\c#\\CsharpLTH\\OU1\\Kassa\\Kassa.csproj": {
+    "C:\\Users\\Axel\\Documents\\c#\\Inl1\\Inl1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Axel\\Documents\\c#\\CsharpLTH\\OU1\\Kassa\\Kassa.csproj",
-        "projectName": "Kassa",
-        "projectPath": "c:\\Users\\Axel\\Documents\\c#\\CsharpLTH\\OU1\\Kassa\\Kassa.csproj",
+        "projectUniqueName": "C:\\Users\\Axel\\Documents\\c#\\Inl1\\Inl1.csproj",
+        "projectName": "Inl1",
+        "projectPath": "C:\\Users\\Axel\\Documents\\c#\\Inl1\\Inl1.csproj",
         "packagesPath": "C:\\Users\\Axel\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Axel\\Documents\\c#\\CsharpLTH\\OU1\\Kassa\\obj\\",
+        "outputPath": "C:\\Users\\Axel\\Documents\\c#\\Inl1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Axel\\AppData\\Roaming\\NuGet\\NuGet.Config"

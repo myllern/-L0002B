@@ -29,6 +29,8 @@ namespace OU1
                     Console.WriteLine(nrOfBills(10, sum));
                     Console.WriteLine(nrOfBills(5, sum));
                     Console.WriteLine(nrOfBills(1, sum));
+                    
+                    Console.ReadLine();
 
                 }
 
@@ -41,16 +43,14 @@ namespace OU1
                     sum = deposit - price;
                     Console.WriteLine("Ej tillräcklig betalning... ");
                 }
-
-
-                //TODO: Fixa sum så den minskaar eller nått
-                static String nrOfBills(int val, int sum)
+                //TODO: Fixa sum så den minskaar eller nått   
+            }
+            public static String nrOfBills(int val, int sum)
                 {
                     String s = $"{(sum - sum % val) / val} lappar:";
                     sum = sum % val;
                     return s;
                 }
-            }
         }
     }
 
