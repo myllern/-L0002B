@@ -6,9 +6,10 @@ namespace OU1
     {
         static void Main(string[] args)
         {
-            while(true){
-            Cashier c = new Cashier();
-            c.init();
+            while (true)
+            {
+                Cashier c = new Cashier();
+                c.init();
             }
         }
 
@@ -45,7 +46,7 @@ namespace OU1
                     Console.WriteLine(nrOfBills(10));
                     Console.WriteLine(nrOfBills(5));
                     Console.WriteLine(nrOfBills(1));
-         
+
 
                 }
                 if (sum == 0)
