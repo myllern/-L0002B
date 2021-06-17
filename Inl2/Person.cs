@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 namespace Inl2
 {
 
@@ -36,6 +38,12 @@ namespace Inl2
         {
             get { return antal; }
             set { antal = value; }
+        }
+
+        public String PersonAttributes(){
+            String s = $"{this.name}, {this.personNr.ToString()}, {this.Distrikt}, {this.Antal.ToString()}";
+            return s;
+
         }
 
     }
