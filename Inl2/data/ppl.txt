@@ -1,0 +1,7 @@
+John, 9210069928, halmstad, 1
+dohn, 9210069928, halmstad, 3
+Joohn, 9210069928, halmstad, 2
+Joohn, 9210069928, halmstad, 3
+Max, 91282639, Lund, 300
+Felix, 31241415, lluu, 140
+Lule, 3123134, gbgb, 333

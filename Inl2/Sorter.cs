@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Inl2
 {
@@ -10,9 +11,7 @@ namespace Inl2
         public static List<Person>[] GroupPersons(List<Person> people)
         {
             List<Person>[] L = new List<Person>[4];
-            
-                people.Sort(delegate (Person p1, Person p2)
-                { return p1.Antal.CompareTo(p2.Antal); });
+                people = people.OrderByDescending(ppl => ppl.Antal).ToList();
 
                 L[0] = people.FindAll(delegate (Person p) { return p.Antal < 50; });
                 L[1] = people.FindAll(delegate (Person p) { return p.Antal >= 50 && p.Antal < 100; });
