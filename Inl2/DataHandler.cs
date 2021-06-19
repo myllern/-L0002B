@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
-
+using System.Linq;
 
 
 namespace Inl2
@@ -22,17 +22,25 @@ namespace Inl2
         }
         public void addPerson(Person p)
         {
-            File.AppendAllText(path, p.PersonAttributes() + Environment.NewLine);
+            File.AppendAllText(path, Environment.NewLine + p.PersonAttributes());
         }
 
 
-        public List<string> GetPersons()
+        public List<Person> GetPersons()
         {
-            List<string> p = new List<string>();
-           
-            // TODO  GetPersons från line i fil!
+            List<string> lines = new List<string>();
+            List<Person> persons = new List<Person>();
 
-            return p;
+            lines = File.ReadAllLines(path).ToList();
+
+            foreach (String line in lines)
+            {
+                String[] s = line.Split(',');
+
+                persons.Add(new Person(s[0], s[1], s[2], int.Parse(s[3])));
+            }
+
+            return persons;
         }
 
         public List<string> getLines()

@@ -17,19 +17,25 @@ namespace Inl2
             DataHandler DH = new DataHandler();
 
 
+            while(true){
+
             switch (display.MainMenue())
             {
                 case 1:
                     String[] p = display.addPerson();
-                    DH.addPerson(new Person(p[0], int.Parse(p[1]), p[2], int.Parse(p[3])));
+                    DH.addPerson(new Person(p[0], p[1], p[2], int.Parse(p[3])));
                     break;
-
-               // case 2:
-
-
+                case 2:
+                    List<Person> ppl = DH.GetPersons();
+                    List<Person>[] groups = Sorter.GroupPersons(ppl);
+                    display.SalesInfo(groups[0], groups[1], groups[2], groups[3]);
+                    
+                    break;
+                case 3:
+                System.Environment.Exit(1);
+                break;
             }
-
-
+            }
 
 
         }

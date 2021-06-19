@@ -7,7 +7,7 @@ namespace Inl2
     static class Sorter
     {
 
-        public static List<Person>[] groups(List<Person> people)
+        public static List<Person>[] GroupPersons(List<Person> people)
         {
             List<Person>[] L = new List<Person>[4];
             
@@ -18,7 +18,8 @@ namespace Inl2
                 L[1] = people.FindAll(delegate (Person p) { return p.Antal >= 50 && p.Antal < 100; });
                 L[2] = people.FindAll(delegate (Person p) { return p.Antal >= 100 && p.Antal < 200; });
                 L[3] = people.FindAll(delegate (Person p) { return p.Antal >= 200; });
-                
+               
+               
             return L;
 
         }

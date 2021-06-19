@@ -6,11 +6,11 @@ namespace Inl2
 
     public class Person
     {
-        private string name, distrikt;
-        private int personNr, antal;
+        private string name, distrikt, personNr;
+        private  int antal;
 
         //constructor för Person
-        public Person(string name, int personNr, string distrikt, int antal)
+        public Person(string name, string personNr, string distrikt, int antal)
         {
             this.name = name;
             this.personNr = personNr;
@@ -24,7 +24,7 @@ namespace Inl2
             get { return name; }
             set { name = value; }
         }
-        public int PersonNr
+        public string PersonNr
         {
             get { return personNr; }
             set { personNr = value; }

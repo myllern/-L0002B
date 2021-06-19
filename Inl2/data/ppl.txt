@@ -1,2 +1,0 @@
-John Doe, 9210062564, Halland, 203
-Bob Bobsson, 2738292936, Stockholm, 10
