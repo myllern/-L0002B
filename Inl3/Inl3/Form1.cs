@@ -19,7 +19,9 @@ namespace Inl3
 
         private void OkClicker(object sender, EventArgs e)
         {
+            Person p = new Person(txt_firstName.Text, txt_lastName.Text, txt_pernr.Text);
 
+            AddGrid(p);
 
         }
 
@@ -28,22 +30,22 @@ namespace Inl3
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+
+        private void AddGrid(Person p)
         {
+            DataGridViewRow newRow = new DataGridViewRow();
+            newRow.CreateCells(dataGridView1);
+            newRow.Cells[0].Value = p.GetFName();
+            newRow.Cells[1].Value = p.GetLName();
+            newRow.Cells[2].Value = p.GetPrNr();
+            newRow.Cells[3].Value = p.GetGender();
+            newRow.Cells[4].Value = p.ValidateNr();
+
+            dataGridView1.Rows.Add(newRow);
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Welcome_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
