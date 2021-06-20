@@ -1,0 +1,15 @@
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\bin\Debug\netcoreapp3.1\Inl3.exe
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\bin\Debug\netcoreapp3.1\Inl3.deps.json
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\bin\Debug\netcoreapp3.1\Inl3.runtimeconfig.json
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\bin\Debug\netcoreapp3.1\Inl3.runtimeconfig.dev.json
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\bin\Debug\netcoreapp3.1\Inl3.dll
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\bin\Debug\netcoreapp3.1\Inl3.pdb
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\obj\Debug\netcoreapp3.1\Inl3.csproj.AssemblyReference.cache
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\obj\Debug\netcoreapp3.1\Inl3.Form1.resources
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\obj\Debug\netcoreapp3.1\Inl3.csproj.GenerateResource.cache
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\obj\Debug\netcoreapp3.1\Inl3.AssemblyInfoInputs.cache
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\obj\Debug\netcoreapp3.1\Inl3.AssemblyInfo.cs
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\obj\Debug\netcoreapp3.1\Inl3.csproj.CoreCompileInputs.cache
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\obj\Debug\netcoreapp3.1\Inl3.dll
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\obj\Debug\netcoreapp3.1\Inl3.pdb
+C:\Users\Axel\Documents\c#\L0002B\Inl3\Inl3\obj\Debug\netcoreapp3.1\Inl3.genruntimeconfig.cache
