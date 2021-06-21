@@ -42,14 +42,6 @@ namespace Inl2
             return persons;
         }
 
-        public List<string> getLines()
-        {
-            return this.lines;
-        }
 
-        public void addLine(String[] p)
-        {
-            File.WriteAllLines(path, p);
-        }
     }
 }

@@ -25,7 +25,9 @@ namespace Inl2
                     DH.addPerson(new Person(p[0], p[1], p[2], int.Parse(p[3])));
                     break;
                 case 2:
+                //lista med personer från txt
                     List<Person> ppl = DH.GetPersons();
+                //sorterad listan ppl, för att få en array med fyra listor som är sorterade
                     List<Person>[] groups = Sorter.GroupPersons(ppl);
                     display.SalesInfo(groups[0], groups[1], groups[2], groups[3]);             
                     break;
