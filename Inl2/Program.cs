@@ -18,7 +18,6 @@ namespace Inl2
 
 
             while(true){
-
             switch (display.MainMenue())
             {
                 case 1:
@@ -28,8 +27,7 @@ namespace Inl2
                 case 2:
                     List<Person> ppl = DH.GetPersons();
                     List<Person>[] groups = Sorter.GroupPersons(ppl);
-                    display.SalesInfo(groups[0], groups[1], groups[2], groups[3]);
-                    
+                    display.SalesInfo(groups[0], groups[1], groups[2], groups[3]);             
                     break;
                 case 3:
                 System.Environment.Exit(1);

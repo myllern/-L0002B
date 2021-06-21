@@ -32,7 +32,7 @@ namespace OU1
                 Console.WriteLine("Ange pris :");
                 this.price = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("ange hur mycket du har betalat :");
+                Console.WriteLine("Ange hur mycket du har betalat :");
                 int deposit = int.Parse(Console.ReadLine());
 
                 sum = deposit - price;

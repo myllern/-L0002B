@@ -1,24 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Axel\\Documents\\c#\\CsharpLTH\\Inl1\\Inl1.csproj": {}
+    "C:\\Users\\Axel\\Documents\\c#\\L0002B\\Inl1\\Inl1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Axel\\Documents\\c#\\CsharpLTH\\Inl1\\Inl1.csproj": {
+    "C:\\Users\\Axel\\Documents\\c#\\L0002B\\Inl1\\Inl1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Axel\\Documents\\c#\\CsharpLTH\\Inl1\\Inl1.csproj",
+        "projectUniqueName": "C:\\Users\\Axel\\Documents\\c#\\L0002B\\Inl1\\Inl1.csproj",
         "projectName": "Inl1",
-        "projectPath": "C:\\Users\\Axel\\Documents\\c#\\CsharpLTH\\Inl1\\Inl1.csproj",
+        "projectPath": "C:\\Users\\Axel\\Documents\\c#\\L0002B\\Inl1\\Inl1.csproj",
         "packagesPath": "C:\\Users\\Axel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Axel\\Documents\\c#\\CsharpLTH\\Inl1\\obj\\",
+        "outputPath": "C:\\Users\\Axel\\Documents\\c#\\L0002B\\Inl1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Axel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Axel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",

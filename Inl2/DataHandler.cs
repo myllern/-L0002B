@@ -16,8 +16,7 @@ namespace Inl2
         public DataHandler()
         {
             this.fileName = "ppl.txt";
-            this.path = Path.Combine(Environment.CurrentDirectory, @"Data\", fileName);
-
+            this.path = Path.Combine(Environment.CurrentDirectory, @"data\", fileName);
 
         }
         public void addPerson(Person p)
