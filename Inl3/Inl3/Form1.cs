@@ -27,7 +27,8 @@ namespace Inl3
 
         private void ExitClicker(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Goodbye");
+            Application.Exit();
         }
 
 
@@ -47,6 +48,18 @@ namespace Inl3
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void txt_firstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_reset_clicker(object sender, EventArgs e)
+        {
+            MessageBox.Show("Goodbye");
+            Application.Exit();
 
         }
     }

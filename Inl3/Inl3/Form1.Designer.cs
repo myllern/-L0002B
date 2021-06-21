@@ -44,6 +44,7 @@ namespace Inl3
             this.prNr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isValidated = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_reset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,10 +73,10 @@ namespace Inl3
             // 
             this.txt_firstName.Location = new System.Drawing.Point(223, 79);
             this.txt_firstName.Name = "txt_firstName";
-            this.txt_firstName.PlaceholderText = "J";
             this.txt_firstName.Size = new System.Drawing.Size(200, 39);
             this.txt_firstName.TabIndex = 2;
             this.txt_firstName.Tag = "firstName";
+            this.txt_firstName.TextChanged += new System.EventHandler(this.txt_firstName_TextChanged);
             // 
             // txt_lastName
             // 
@@ -186,11 +187,22 @@ namespace Inl3
             this.isValidated.Name = "isValidated";
             this.isValidated.Width = 200;
             // 
+            // button1
+            // 
+            this.btn_reset.Location = new System.Drawing.Point(1187, 797);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(150, 46);
+            this.btn_reset.TabIndex = 10;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_clicker);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1575, 875);
+            this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lbl_prnr);
             this.Controls.Add(this.lbl_lname);
@@ -226,6 +238,7 @@ namespace Inl3
         private System.Windows.Forms.DataGridViewTextBoxColumn prNr;
         private System.Windows.Forms.DataGridViewTextBoxColumn gender;
         private System.Windows.Forms.DataGridViewTextBoxColumn isValidated;
+        private System.Windows.Forms.Button btn_reset;
     }
 }
 
