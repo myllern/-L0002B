@@ -20,7 +20,7 @@ namespace Inl2
             return int.Parse(Console.ReadLine());
         }
 
-        public string[] addPerson()
+        public string[] AddPerson()
         {
             string[] p = new string[4];
             Console.WriteLine("Namn:");

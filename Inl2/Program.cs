@@ -21,8 +21,8 @@ namespace Inl2
             switch (display.MainMenue())
             {
                 case 1:
-                    String[] p = display.addPerson();
-                    DH.addPerson(new Person(p[0], p[1], p[2], int.Parse(p[3])));
+                    String[] p = display.AddPerson();
+                    DH.AddPerson(new Person(p[0], p[1], p[2], int.Parse(p[3])));
                     break;
                 case 2:
                 //lista med personer från txt

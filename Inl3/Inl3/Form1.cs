@@ -28,7 +28,7 @@ namespace Inl3
         private void ExitClicker(object sender, EventArgs e)
         {
             MessageBox.Show("Goodbye");
-            Application.Exit();
+            Application.Exit(
         }
 
 
@@ -58,8 +58,13 @@ namespace Inl3
 
         private void btn_reset_clicker(object sender, EventArgs e)
         {
-            MessageBox.Show("Goodbye");
-            Application.Exit();
+            dataGridView1.Rows.Clear();
+            dataGridView1.Refresh();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
 
         }
     }

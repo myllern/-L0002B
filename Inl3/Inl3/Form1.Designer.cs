@@ -187,7 +187,7 @@ namespace Inl3
             this.isValidated.Name = "isValidated";
             this.isValidated.Width = 200;
             // 
-            // button1
+            // btn_reset
             // 
             this.btn_reset.Location = new System.Drawing.Point(1187, 797);
             this.btn_reset.Name = "btn_reset";

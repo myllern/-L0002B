@@ -19,7 +19,7 @@ namespace Inl2
             this.path = Path.Combine(Environment.CurrentDirectory, @"data\", fileName);
 
         }
-        public void addPerson(Person p)
+        public void AddPerson(Person p)
         {
             File.AppendAllText(path, Environment.NewLine + p.PersonAttributes());
         }
