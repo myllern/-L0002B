@@ -16,7 +16,7 @@ namespace Inl2
             Display display = new Display();
             DataHandler DH = new DataHandler();
 
-
+            // kör en loop med en switchsats som väljer alternativt från MAinMenue()
             while(true){
             switch (display.MainMenue())
             {

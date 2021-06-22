@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Inl2
 {
-
+    // vid instans skapas person med attributes som behövs 
     public class Person
     {
         private string name, distrikt, personNr;
@@ -39,7 +39,7 @@ namespace Inl2
             get { return antal; }
             set { antal = value; }
         }
-
+        // retunerar en sträng med de attribut som behöver skrivas in i txt filen
         public String PersonAttributes(){
             String s = $"{this.name}, {this.personNr.ToString()}, {this.Distrikt}, {this.Antal.ToString()}";
             return s;

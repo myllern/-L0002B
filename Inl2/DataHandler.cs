@@ -13,18 +13,22 @@ namespace Inl2
         private string fileName;
         private List<string> lines = new List<string>();
 
+
+        // instans ger namn på fil och path
         public DataHandler()
         {
             this.fileName = "ppl.txt";
             this.path = Path.Combine(Environment.CurrentDirectory, @"data\", fileName);
 
         }
+        //Tar in en person och skriver in den som en line i txt filen
         public void AddPerson(Person p)
         {
             File.AppendAllText(path, Environment.NewLine + p.PersonAttributes());
         }
 
 
+        // läser in lines från filer och skapar person obj och retunerar dess i en lista 
         public List<Person> GetPersons()
         {
             List<string> lines = new List<string>();

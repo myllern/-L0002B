@@ -10,6 +10,9 @@ namespace Inl2
 
         public static List<Person>[] GroupPersons(List<Person> people)
         {
+
+            // sorterar en lista efter antal sålda artiklar\n
+            // retunerar en arrat med listor 
             List<Person>[] L = new List<Person>[4];
                 people = people.OrderByDescending(ppl => ppl.Antal).ToList();
 

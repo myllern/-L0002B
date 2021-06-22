@@ -8,7 +8,7 @@ namespace Inl2
         public Display() { }
 
 
-
+        // skriver ut alternativ och retunersar en int med det alternativet som väljs
         public int MainMenue()
         {
             Console.WriteLine("\n1 - Lägg till säljare");
@@ -19,7 +19,7 @@ namespace Inl2
 
             return int.Parse(Console.ReadLine());
         }
-
+        //Skriver ut alternativ och retnerar en lista med de attribute som skrivs in
         public string[] AddPerson()
         {
             string[] p = new string[4];
@@ -34,6 +34,8 @@ namespace Inl2
             return p;
         }
 
+
+        // skriver ut infon som efterfrågades i upg
         public void SalesInfo(List<Person> G1, List<Person> G2, List<Person> G3, List<Person> G4)
         {
                         Console.WriteLine("\nNamn   Persnr   Distrikt    Antal\n");
