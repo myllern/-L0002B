@@ -17,6 +17,7 @@ namespace Inl3
             InitializeComponent();
         }
 
+        //Skapar en ny person med de namn och personnummer som står i de olika textbox. Skickas sedan till funktionen AddGrid.
         private void OkClicker(object sender, EventArgs e)
         {
             Person p = new Person(txt_firstName.Text, txt_lastName.Text, txt_pernr.Text);
@@ -25,13 +26,14 @@ namespace Inl3
 
         }
 
+        //Avlustar applikationen.
         private void ExitClicker(object sender, EventArgs e)
         {
             MessageBox.Show("Goodbye");
-            Application.Exit(
+            Application.Exit();
         }
 
-
+        //Skapar ny rad och fyller respektive cell med informationen skickats från textbox firstname, lastname och personnummer från OkClicker.
         private void AddGrid(Person p)
         {
             DataGridViewRow newRow = new DataGridViewRow();
@@ -56,6 +58,7 @@ namespace Inl3
 
         }
 
+        //Återställer all information i datagrid.
         private void btn_reset_clicker(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
