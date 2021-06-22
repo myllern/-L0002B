@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 
 namespace Inl3
@@ -40,26 +41,25 @@ public class Person
 	//Validerar personnummer enligt algoritmen i uppgiftsspecifikationen och returnerar om det är giltigt eller ogiltigt.
 	public string ValidateNr()
         {
-			int sum = 0;
 			int[] seq = { 2, 1, 2, 1, 2, 1, 2, 1, 2, 1 };
-			int s;
+			int sum = 0;
 
-			for (int i = 0; i < 9; i++)
-            {
-				s = CharUnicodeInfo.GetDecimalDigitValue(PrNr[i]) * seq[i];
-				if (s > 10)
-				{
-					sum += (s - 10 + 1) + s;
-					
-				}
-				else {
-					sum += s;
-				}
-				Console.WriteLine(s);
-			}
-			Console.WriteLine("sum");
-			return (sum % 10 == 0) ? "Giltigt nummer" : "Ogiltigt nummer";
+			int temp;
+			List<string> list = new List<string>();
+			for (int i = 0; i < 10; i++)
+			{
+			temp = seq[i] * int.Parse(PrNr[i].ToString());
 
+			if(temp >= 10)
+                {
+					sum += temp - 9;
+                }
+                else
+                {
+					sum += temp;
+                }
+			};
+			return (sum % 10 == 0) ? "Giltigt nummer" : "Ogiltigt nummer";		
 		}
 	}
 }

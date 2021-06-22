@@ -215,6 +215,7 @@ namespace Inl3
             this.Controls.Add(this.btn_ok);
             this.Name = "Form1";
             this.Text = "Inl 3";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
