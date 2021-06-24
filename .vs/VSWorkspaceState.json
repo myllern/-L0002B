@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\app_inl1",
+    "\\Inl1",
+    "\\Inl2",
+    "\\Inl3",
+    "\\Inl3\\Inl3"
   ],
+  "SelectedNode": "\\Inl1\\Inl1.csproj",
   "PreviewInSolutionExplorer": false
 }

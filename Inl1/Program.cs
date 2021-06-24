@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OU1
 {
@@ -16,15 +17,14 @@ namespace OU1
         }
 
 
-
-
-
         public class Cashier
         {
             // skapar var
             int sum;
             int deposit;
             int price;
+            int number_val;
+
             public void init()
             {
 
@@ -41,18 +41,27 @@ namespace OU1
                 // om sum > 0, skriv ut den som metoden gör, alltså printar hur mång av valören som ska tillbaka
                 if (sum > 0)
                 {
-                
-                    Console.WriteLine($"Växel tillbaka: {sum} kr"
-                    );
 
-                    Console.WriteLine(nrOfBills(500));
-                    Console.WriteLine(nrOfBills(100));
-                    Console.WriteLine(nrOfBills(50));
-                    Console.WriteLine(nrOfBills(20));
-                    Console.WriteLine(nrOfBills(10));
-                    Console.WriteLine(nrOfBills(5));
-                    Console.WriteLine(nrOfBills(1));
+                    List<int> list = new List<int>();
+                    list.Add(500);
+                    list.Add(100);
+                    list.Add(50);
+                    list.Add(10);
+                    list.Add(5);
+                    list.Add(1);
 
+                    Console.WriteLine($"Växel tillbaka: {sum} kr");
+
+
+                    foreach (int item in list)
+                    {
+                        nrOfBills(item);
+                            if (number_val > 0)
+                            { 
+                                Console.WriteLine(nrOfBills(item)); 
+                            }
+
+                    }
 
                 }
                 // ganska självbeskrivande
@@ -77,7 +86,9 @@ namespace OU1
             // tar in valören som skall printas.
             public String nrOfBills(int val)
             {
-                String s = $"{val} valör tillbaka: {(sum - sum % val) / val}";
+                
+                String s = $"{val} valör tillbaka: {number_val}";
+                number_val = (sum - sum % val) / val;
                 sum = sum % val;
                 return s;
             }

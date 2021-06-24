@@ -14,6 +14,7 @@ namespace app_inl1
     {
         //global sum variable
         int sum;
+        int number_val;
 
         public Form1()
         {
@@ -32,23 +33,28 @@ namespace app_inl1
             //I övrigt samma kod som i konsolapplikationen förutom att resultatet visas i en textbox (txb_change) istället för konsolen.
             if (sum > 0)
             {
+
+                List<int> list = new List<int>();
+                list.Add(500);
+                list.Add(100);
+                list.Add(50);
+                list.Add(10);
+                list.Add(5);
+                list.Add(1);
+
                 txb_change.AppendText($"Växel tillbaka: {sum} kr");
                 txb_change.AppendText(Environment.NewLine);
 
-                txb_change.AppendText(nrOfBills(500));
-                txb_change.AppendText(Environment.NewLine);
-                txb_change.AppendText(nrOfBills(100));
-                txb_change.AppendText(Environment.NewLine);
-                txb_change.AppendText(nrOfBills(50));
-                txb_change.AppendText(Environment.NewLine);
-                txb_change.AppendText(nrOfBills(20));
-                txb_change.AppendText(Environment.NewLine);
-                txb_change.AppendText(nrOfBills(10));
-                txb_change.AppendText(Environment.NewLine);
-                txb_change.AppendText(nrOfBills(5));
-                txb_change.AppendText(Environment.NewLine);
-                txb_change.AppendText(nrOfBills(1));
-                txb_change.AppendText(Environment.NewLine);
+                foreach (int item in list)
+                {
+                    nrOfBills(item);
+                    if (number_val > 0)
+                    {
+                        txb_change.AppendText(nrOfBills(item));
+                        txb_change.AppendText(Environment.NewLine);
+                    }
+
+                }
 
             }
             // ganska självbeskrivande
@@ -77,7 +83,8 @@ namespace app_inl1
             // tar in valören som skall printas.
             public String nrOfBills(int val)
             {
-                String s = $"{val} valör tillbaka: {(sum - sum % val) / val}";
+                String s = $"{val} valör tillbaka: {number_val}";
+                number_val = (sum - sum % val) / val;
                 sum = sum % val;
                 return s;
             }
