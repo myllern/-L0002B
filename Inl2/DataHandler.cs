@@ -18,7 +18,7 @@ namespace Inl2
         public DataHandler()
         {
             this.fileName = "ppl.txt";
-            this.path = Path.Combine(Environment.CurrentDirectory, @"data\", fileName);
+            this.path = Path.Combine(Environment.CurrentDirectory, fileName);
 
         }
         //Tar in en person och skriver in den som en line i txt filen
