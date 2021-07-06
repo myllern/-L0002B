@@ -24,7 +24,9 @@ namespace Inl2
         //Tar in en person och skriver in den som en line i txt filen
         public void AddPerson(Person p)
         {
-            File.AppendAllText(path, Environment.NewLine + p.PersonAttributes());
+
+            File.AppendAllLines(fileName, new[] { p.PersonAttributes() });
+
         }
 
 
